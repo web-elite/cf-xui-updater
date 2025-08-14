@@ -1,0 +1,20 @@
+# CFScanner Auto Installer & Manager
+
+This repository provides an **interactive Bash menu** to install, configure, and manage [CFScanner](https://github.com/MortezaBashsiz/CFScanner) (Python version).  
+It installs all dependencies, sets up a `systemd` service, and schedules the scanner to run periodically.
+
+---
+
+## Features
+- **Install** CFScanner with all prerequisites
+- **Change scan interval** (default: 30 minutes)
+- **Disable** the service without removing files
+- **Uninstall** CFScanner completely
+- Saves logs in `/opt/cfscanner/logs`
+
+---
+
+## One-line installation
+Run this command to download and execute the installer:
+```bash
+bash <(curl -s https://raw.githubusercontent.com/web-elite/cf-xui-updater/main/installer.sh)
